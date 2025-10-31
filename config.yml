@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: "https://digclamingo-jos.netlify.app"
+
+collections:
+  - name: "sermons"
+    label: "Sermons"
+    folder: "content/sermons"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Preacher", name: "preacher", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Event Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "body", widget: "text" }
+
+  - name: "testimonies"
+    label: "Testimonies"
+    folder: "content/testimonies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Testimony", name: "body", widget: "markdown" }
+
+  - name: "anniversary"
+    label: "Anniversary Updates"
+    folder: "content/anniversary"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Update Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }

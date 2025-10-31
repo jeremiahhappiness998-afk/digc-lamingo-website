@@ -1,0 +1,16 @@
+{
+  "name": "Dunamis International Gospel Centre - Lamingo-Jos",
+  "short_name": "DIGC Lamingo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4169E1",
+  "theme_color": "#FFD700",
+  "description": "Official website of Dunamis International Gospel Centre – Lamingo-Jos",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
